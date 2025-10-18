@@ -2,10 +2,8 @@ spring:
   application:
     name: demo
 
-  config:
-    import: optional:file:.env[.properties]  # .env ?? ?? ??
-    activate:
-      on-profile: default
-
   profiles:
-    active: ${SPRING_PROFILES_ACTIVE:dev} # ??? ?? dev
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+
+  config:
+    import: optional:file:.env[.properties]
