@@ -1,5 +1,5 @@
 comment:                  #this is a top-level key
-  layout: " diff, flags, files"
+  layout: "reach,diff,flags,files,footer" # 댓글 레이아웃 지정
   behavior: default
   require_changes: false  # if true: only post the comment if coverage changes
   require_base: false        # [true :: must have a base report to post]
